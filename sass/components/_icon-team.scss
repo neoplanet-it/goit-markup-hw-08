@@ -1,0 +1,37 @@
+
+.icon-team {
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  &__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 22px;
+   color: var(--border-cleint);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__element:hover,
+&__element:focus {
+  color: var(--white-color);
+  background-color: var(--link-color);
+}
+}
+
+.icon-team__element .icon-team__color {
+  fill: currentColor;
+}
