@@ -93,18 +93,18 @@ button {
 
   color: var(--preprimary-color);
 
-&:hover .button-close__color,
-&:focus .button-close__color {
-  color: var(--link-color);
-}
+  &:hover .button-close__color,
+  &:focus .button-close__color {
+    color: var(--link-color);
+  }
 
-&__color {
-  margin: 0;
-  padding: 0;
-  margin: 4px;
+  &__color {
+    margin: 0;
+    padding: 0;
+    margin: 4px;
 
-  fill: currentColor;
-}
+    fill: currentColor;
+  }
 }
 
 //**MAIN__MODAL-BUTTON**//
@@ -112,14 +112,37 @@ button {
 .button-modal {
   text-align: center;
 
-&__detail {
-  margin-top: 30px;
+  &__detail {
+    margin-top: 30px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__detail:hover,
+  &__detail:focus {
+    background-color: var(--prelink-color);
+  }
 }
 
-&__detail:hover,
-&__detail:focus {
-  background-color: var(--prelink-color);
+.button-mobile {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  margin-left: 250px;
+  min-width: 40px;
 }
+
+.button-mobile .button-mobile__cross {
+  display: none;
+}
+
+.button-mobile.is-open .button-mobile__cross {
+  display: block;
+}
+
+.button-mobile.is-open .button-mobile__menu {
+  display: none;
 }
