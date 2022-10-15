@@ -26,20 +26,72 @@
           <a class="logo" href="./index.html"
             >Web<span class="logo__studio--header">Studio</span></a
           >
-          <button type="button" class="button-mobile is-open" aria-expanded="false" data-menu-button>
-            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-              <use class="button-mobile__cross" href="./images/icons.svg#cross"></use>
-              <use class="button-mobile__menu" href="./images/icons.svg#menu"></use>
+          <button
+            type="button"
+            class="button-mobile is-open"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              class="button-mobile__color"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="button-mobile__menu" href="./images/icons.svg#cross"></use>
+              <use class="button-mobile__cross" href="./images/icons.svg#menu"></use>
             </svg>
           </button>
-          <ul class="site-nav list">
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li><a class="site-nav__link current" href="./index.html">Студія</a></li>
+              <li><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
+              <li><a class="site-nav__link" href="#">Контакти</a></li>
+            </ul>
+            <ul class="auth-nav list">
+              <li class="item">
+                <a
+                  class="auth-nav__contact--telephone site-nav__link icon-header"
+                  href="tel:+380961111111"
+                >
+                  <svg class="icon-header__content" width="20px" height="16">
+                    <use href="./images/icons.svg#icon-contact-telephone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="item">
+                <a
+                  class="auth-nav__contact--email site-nav__link icon-header"
+                  href="mailto:info@devstudio.com"
+                >
+                  <svg class="icon-header__content" width="20px" height="16">
+                    <use href="./images/icons.svg#icon-contact-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <div class="menu-mobile list">
+              <ul class="menu-mobile__link list">
+                <li><a class="menu-mobile__link--sites" href="#">Instagram</a></li>
+                <li><a class="menu-mobile__link--sites" href="#">Twitter</a></li>
+                <li><a class="menu-mobile__link--sites" href="#">Facebook</a></li>
+                <li><a class="menu-mobile__link--sites" href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- <ul class="site-nav list">
             <li><a class="site-nav__link current" href="./index.html">Студія</a></li>
             <li><a class="site-nav__link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="site-nav__link" href="#">Контакти</a></li>
-          </ul>
+          </ul> -->
         </nav>
 
-        <ul class="auth-nav list">
+        <!--**DESKTOP**-->
+        <!-- <ul class="auth-nav list">
           <li class="item">
             <a
               class="auth-nav__contact site-nav__link icon-header"
@@ -59,7 +111,41 @@
               +38 096 111 11 11</a
             >
           </li>
+        </ul> -->
+
+        <!--**MOBILE**-->
+        <!-- <ul class="auth-nav list">
+          <li class="item">
+            <a
+              class="auth-nav__contact--telephone site-nav__link icon-header"
+              href="tel:+380961111111"
+            >
+              <svg class="icon-header__content" width="20px" height="16">
+                <use href="./images/icons.svg#icon-contact-telephone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="item">
+            <a
+              class="auth-nav__contact--email site-nav__link icon-header"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="icon-header__content" width="20px" height="16">
+                <use href="./images/icons.svg#icon-contact-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
         </ul>
+        <div class="menu-mobile list">
+          <ul class="menu-mobile__link list">
+            <li><a class="menu-mobile__link--sites" href="#">Instagram</a></li>
+            <li><a class="menu-mobile__link--sites" href="#">Twitter</a></li>
+            <li><a class="menu-mobile__link--sites" href="#">Facebook</a></li>
+            <li><a class="menu-mobile__link--sites" href="#">LinkedIn</a></li>
+          </ul>
+        </div> -->
       </div>
     </header>
 
@@ -88,9 +174,7 @@
 
               <h3 class="benefit-list__title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="benefit-list__info">
-                Ідейні міркування, і навіть початок <br />
-                повсякденної роботи з формування <br />
-                позиції.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="benefit-list__chapter">
@@ -102,8 +186,7 @@
 
               <h3 class="benefit-list__title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="benefit-list__info">
-                Завдання організації, особливо рамки <br />
-                і місце навчання кадрів тягне у себе.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="benefit-list__chapter">
@@ -115,8 +198,7 @@
 
               <h3 class="benefit-list__title">ПЛАНУВАННЯ</h3>
               <p class="benefit-list__info">
-                Так само консультація з широким <br />
-                активом значною мірою зумовлює.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="benefit-list__chapter">
@@ -128,9 +210,7 @@
 
               <h3 class="benefit-list__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="benefit-list__info">
-                Значимість цих проблем настільки <br />
-                очевидна, що реалізація планових <br />
-                завдань.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -139,9 +219,9 @@
 
       <!--*ЦЕЛИ КОМПАНИИ*-->
 
-      <section class="main-philosophy">
+      <!-- <section class="main-philosophy">
         <div class="container">
-          <h2 class="main-font">Чим ми займаємося</h2>
+          <h2 class="main-font__philosophy">Чим ми займаємося</h2>
           <ul class="main-philosophy__list list">
             <li>
               <div class="main-philosophy__details">
@@ -163,7 +243,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--*КОМАНДА КОМПАНИИ*-->
 
@@ -374,7 +454,7 @@
 
     <footer class="main-footer">
       <div class="footer-support container">
-        <div>
+        <div class="contact-footer">
           <a class="logo" href="./index.html"
             >Web<span class="logo__studio--footer">Studio</span></a
           >
@@ -539,5 +619,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

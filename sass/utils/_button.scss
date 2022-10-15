@@ -36,6 +36,7 @@ button {
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 6px 22px;
+  margin-bottom: 15px;
   min-width: 23px;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -61,6 +62,7 @@ button {
   width: 200px;
   height: 50px;
 
+  margin-left: 125px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,15 +126,20 @@ button {
   }
 }
 
+//**MOBILE**//
+
 .button-mobile {
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-
-  margin-left: 250px;
   min-width: 40px;
+
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 15px;
 }
 
 .button-mobile .button-mobile__cross {
@@ -145,4 +152,20 @@ button {
 
 .button-mobile.is-open .button-mobile__menu {
   display: none;
+}
+
+.button-mobile {
+  margin: 0;
+  padding: 0;
+
+  color: var(--preprimary-color);
+}
+
+.button-mobile:hover .button-mobile__menu,
+.button-mobile:focus .button-mobile__menu {
+  color: var(--link-color);
+}
+
+.button-mobile__menu {
+  fill: currentColor;
 }

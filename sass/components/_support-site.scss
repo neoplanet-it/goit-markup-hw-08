@@ -1,25 +1,26 @@
 .support-elements {
-  display: flex;
+  //   display: flex;
   padding-top: 20px;
 
-&__email input {
-  margin: 0;
-  padding: 0;
+  &__email input {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 
-  height: 50px;
-  width: 358px;
-  margin-right: 12px;
-  padding-left: 16px;
+    height: 50px;
+    width: 358px;
+    margin-right: 12px;
+    padding-left: 16px;
 
-  border: 2px solid var(--border-footer);
-  border-radius: 4px;
-  background-color: var(--background-color);
-  cursor: pointer;
-}
+    border: 2px solid var(--border-footer);
+    border-radius: 4px;
+    background-color: var(--background-color);
+    cursor: pointer;
+  }
 
-&__color {
-  color: var(--white-color);
-}
+  &__color {
+    color: var(--white-color);
+  }
 }
 
 .icon-telegram {

@@ -8,28 +8,41 @@
   margin-left: auto;
   margin-right: auto;
 
-&__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 0;
+    padding: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--studio-details);
+  }
 }
 
-&__title {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.main-font__philosophy {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--primary-color);
 
   margin: 0;
-  padding: 0;
-  padding: 27px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
   text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  background-color: var(--studio-details);
-}
+  margin-bottom: 50px;
+
+    display: none;
 }

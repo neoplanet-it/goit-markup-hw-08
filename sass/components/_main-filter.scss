@@ -1,11 +1,15 @@
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+    padding-top: 60px;
 }
 
 .main-filter {
   display: flex;
-  justify-content: center;
+  //   justify-content: center;
+
+    padding-bottom: 40px;
+	 flex-wrap: wrap;
 }
 
 .main-filter .item + .item {

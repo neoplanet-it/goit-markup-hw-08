@@ -3,14 +3,23 @@
 }
 
 .footer-support {
-  display: flex;
-  align-items: baseline;
+//   display: flex;
+//   align-items: baseline;
+text-align: center;
+}
+
+.contact-footer {
+	padding-bottom: 60px;
 }
 
 .platform-site {
-  margin-left: 70px;
+//   margin-left: 70px;
+text-align: center;
 }
 
 .support-site {
-  margin-left: 93px;
+
+//   margin-left: 93px;
+padding-top: 60px;
+  text-align: center;
 }
