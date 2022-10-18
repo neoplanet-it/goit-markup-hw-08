@@ -6,10 +6,16 @@
 
 .main-filter {
   display: flex;
-  //   justify-content: center;
-
     padding-bottom: 40px;
 	 flex-wrap: wrap;
+
+	 @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1600px) {
+	    justify-content: center;
+  }
 }
 
 .main-filter .item + .item {

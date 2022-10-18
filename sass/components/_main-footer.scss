@@ -3,23 +3,43 @@
 }
 
 .footer-support {
-//   display: flex;
-//   align-items: baseline;
-text-align: center;
+  //   display: flex;
+  //   align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .contact-footer {
-	padding-bottom: 60px;
+  padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+    margin-left: 76px;
+    margin-right: 165px;
+  }
 }
 
 .platform-site {
-//   margin-left: 70px;
-text-align: center;
+  //   margin-left: 70px;
+  text-align: center;
 }
 
 .support-site {
-
-//   margin-left: 93px;
-padding-top: 60px;
+  //   margin-left: 93px;
+  padding-top: 60px;
   text-align: center;
+
+    @media screen and (min-width: 768px) {
+  padding-top: 0px;
+  }
+}
+
+.tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }

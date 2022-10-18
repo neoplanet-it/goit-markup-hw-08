@@ -5,7 +5,7 @@
   padding-left: 40px;
   display: flex + order;
 
-  &__contact--telephone {
+    &__contact--telephone {
     text-decoration: none;
     font-weight: 500;
     font-size: 34px;
@@ -26,16 +26,35 @@
 
     // display: block;
   }
+
+    &__contact {
+    color: var(--grey-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+
+  }
+
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .icon-header {
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   background-size: contain;
-  //   background-repeat: no-repeat;
-  //   background-position: center;
-  //   color: var(--grey-color);
+  display: flex;
+//   align-items: center;
+//   justify-content: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--grey-color);
 
   &:hover,
   &:focus {
@@ -44,13 +63,21 @@
 
   &__content {
     // margin-right: 10px;
-    // fill: currentColor;
-    display: none;
+    margin-right: 8px;
+    fill: currentColor;
+
+	@media screen and (max-width: 768px) {
+	display: none;
   }
+}
 }
 
 .auth-nav .item + .item {
   //   margin-left: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
 }
 
 //**MOBILE**//
@@ -60,6 +87,7 @@
   display: flex;
   padding-left: 30px;
   padding-top: 64px;
+  padding-bottom: 48px;
 }
 
 .menu-mobile__link--sites {

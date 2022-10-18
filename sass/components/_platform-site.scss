@@ -6,25 +6,29 @@
   gap: 10px;
   padding-left: 122px;
 
-&__element {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: var(--border-footer);
-  color: var(--white-color);
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  &__element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--border-footer);
+    color: var(--white-color);
 
-&__element:hover,
-&__element:focus {
-  background-color: var(--link-color);
-}
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-&__color {
-  fill: currentColor;
-}
+  &__element:hover,
+  &__element:focus {
+    background-color: var(--link-color);
+  }
+
+  &__color {
+    fill: currentColor;
+  }
 }

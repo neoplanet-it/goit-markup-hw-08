@@ -1,14 +1,26 @@
 .menu-container {
   display: none;
 
-  position: absolute;
   top: 100%;
   left: 0;
-    width: 480px;
+  width: 100%;
+
   background-color: var(--white-color);
   font-size: 20px;
 
   &.is-open {
     display: block;
+  }
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+
+.desktop-version {
+
+	@media screen and (max-width: 767px) {
+    display: none;
   }
 }
