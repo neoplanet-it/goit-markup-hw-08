@@ -31,6 +31,15 @@
   text-align: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1600px) {
+  .main-font {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+  }
+}
 
 .platform-site__title {
   font-weight: 700;
@@ -77,6 +86,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .container {
   margin-left: auto;
@@ -90,7 +105,7 @@
 }
 @media screen and (min-width: 1600px) {
   .container {
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -162,6 +177,11 @@ button {
 @media screen and (min-width: 768px) {
   .support-elements__button {
     margin-left: 291px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .support-elements__button {
+    margin-left: 12px;
   }
 }
 
@@ -537,6 +557,14 @@ textarea {
   padding-left: 40px;
   display: flexorder;
 }
+@media screen and (min-width: 1600px) {
+  .auth-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
+}
 .auth-nav__contact--telephone {
   text-decoration: none;
   font-weight: 500;
@@ -544,6 +572,7 @@ textarea {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--link-color);
+  display: block;
 }
 .auth-nav__contact--email {
   color: var(--grey-color);
@@ -568,6 +597,17 @@ textarea {
     margin-left: auto;
   }
 }
+@media screen and (min-width: 1600px) {
+  .auth-nav {
+    color: var(--grey-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
+}
+
 .icon-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +616,16 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   color: var(--grey-color);
+}
+@media screen and (min-width: 1600px) {
+  .icon-header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 .icon-header:hover, .icon-header:focus {
   fill: var(--link-color);
@@ -589,10 +639,21 @@ textarea {
     display: none;
   }
 }
+@media screen and (min-width: 1600px) {
+  .icon-header__content {
+    margin-right: 10px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .auth-nav .item + .item {
     margin-top: 10px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .auth-nav .item + .item {
+    margin: 0;
+    margin-left: 50px;
   }
 }
 
@@ -679,13 +740,39 @@ textarea {
     margin-right: 189px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .baner-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .main-benefit {
   padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1600px) {
+  .main-benefit {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+}
 
 @media screen and (min-width: 768px) {
+  .benefit-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1600px) {
   .benefit-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -702,6 +789,11 @@ textarea {
     width: 354px;
     margin-right: 15px;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .benefit-list__chapter {
+    width: 270px;
   }
 }
 .benefit-list__title {
@@ -758,6 +850,11 @@ textarea {
 @media screen and (min-width: 768px) {
   .icon-benefit {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .icon-benefit {
+    width: 270px;
   }
 }
 
@@ -846,6 +943,13 @@ textarea {
         flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1600px) {
+  .main-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .main-team__card {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -864,6 +968,11 @@ textarea {
 @media screen and (min-width: 768px) {
   .main-team__list img {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main-team__list img {
+    width: 270px;
   }
 }
 
@@ -963,6 +1072,17 @@ textarea {
 .footer-support {
   text-align: center;
 }
+@media screen and (min-width: 1600px) {
+  .footer-support {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 .contact-footer {
   padding-bottom: 60px;
 }
@@ -972,9 +1092,22 @@ textarea {
     margin-right: 165px;
   }
 }
+@media screen and (min-width: 1600px) {
+  .contact-footer {
+    text-align: left;
+    margin-left: 0px;
+    margin-right: 0;
+  }
+}
 
 .platform-site {
   text-align: center;
+}
+@media screen and (min-width: 1600px) {
+  .platform-site {
+    text-align: left;
+    margin-left: 70px;
+  }
 }
 
 .support-site {
@@ -984,6 +1117,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .support-site {
     padding-top: 0px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .support-site {
+    margin-left: 93px;
+    text-align: left;
   }
 }
 
@@ -1068,6 +1207,13 @@ textarea {
 .support-elements {
   padding-top: 20px;
 }
+@media screen and (min-width: 1600px) {
+  .support-elements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 .support-elements__email input {
   margin: 0;
   padding: 0;
@@ -1084,6 +1230,12 @@ textarea {
 @media screen and (min-width: 768px) {
   .support-elements__email input {
     width: 450px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .support-elements__email input {
+    width: 358px;
+    margin-right: 0;
   }
 }
 .support-elements__color {
@@ -1261,6 +1413,12 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__title {

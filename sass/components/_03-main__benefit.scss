@@ -1,14 +1,15 @@
 .main-benefit {
   padding: 0;
-  //   padding-top: 94px;
   padding-top: 60px;
-  //   padding-bottom: 47px;
   padding-bottom: 60px;
+
+   @media screen and (min-width: 1600px) {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
 }
 
 .benefit-list {
-  //   display: flex;
-  //   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -16,10 +17,11 @@
   }
 
   @media screen and (min-width: 1600px) {
+	    display: flex;
+    flex-wrap: wrap;
   }
 
   &__chapter {
-    // width: 270px;
     width: 450px;
 
     @media screen and (min-width: 768px) {
@@ -27,6 +29,10 @@
       margin-right: 15px;
       margin-bottom: 30px;
     }
+
+	  @media screen and (min-width: 1600px) {
+    width: 270px;
+  }
   }
 
   &__title {
@@ -78,5 +84,9 @@
 
   @media screen and (min-width: 768px) {
     width: 354px;
+  }
+
+  	  @media screen and (min-width: 1600px) {
+    width: 270px;
   }
 }
