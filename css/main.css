@@ -176,7 +176,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .support-elements__button {
-    margin-left: 291px;
+    margin-left: 260px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -646,6 +646,32 @@ textarea {
   }
 }
 
+.icon-header__envelope {
+  margin-right: 8px;
+  fill: currentColor;
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1600px) {
+  .icon-header__envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-header__smartphone {
+  margin-right: 8px;
+  fill: currentColor;
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1600px) {
+  .icon-header__smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .auth-nav .item + .item {
     margin-top: 10px;
@@ -727,8 +753,13 @@ textarea {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner.jpg);
   }
 }
-
-.baner-title {
+@media screen and (min-width: 1200px) and (min-divice-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main-baner {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main-baner-2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main-baner-2x.jpg);
+  }
+}
+.main-baner .baner-title {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 26px;
@@ -742,13 +773,13 @@ textarea {
   max-width: 696px;
 }
 @media screen and (min-width: 768px) {
-  .baner-title {
+  .main-baner .baner-title {
     margin-left: 189px;
     margin-right: 189px;
   }
 }
 @media screen and (min-width: 1600px) {
-  .baner-title {
+  .main-baner .baner-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -875,6 +906,11 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 1600px) {
+  .main-philosophy {
+    display: none;
+  }
+}
 .main-philosophy__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -948,6 +984,8 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -962,12 +1000,26 @@ textarea {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-color);
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 768px) {
   .main-team {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .main-team__card .img {
+    width: 450px;
   }
 }
+.main-team__card img {
+  width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .main-team__card img {
+    width: 450px;
+  }
+}
+
 .main-team__list img {
   display: block;
   max-width: 100%;
@@ -1311,6 +1363,7 @@ textarea {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -1348,6 +1401,10 @@ textarea {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-list__card img {
+  width: 450px;
 }
 
 .project-selection {

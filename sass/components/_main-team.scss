@@ -33,6 +33,8 @@
     @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
     }
 
     @media screen and (min-width: 1600px) {
@@ -45,13 +47,27 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     background-color: var(--white-color);
-  }
-
-  @media screen and (max-width: 768px) {
     margin-bottom: 30px;
   }
 
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+    &__card .img {
+      width: 450px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
+  }
+}
+
+.main-team__card img {
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
   }
 }
 

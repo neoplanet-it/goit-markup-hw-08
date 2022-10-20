@@ -14,44 +14,44 @@
   background-position: center;
   background-size: cover;
 
-   @media screen and (min-width: 1200px) {
- background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/main-baner.jpg);
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main-baner.jpg);
 
-	 @media screen and (min-divice-pixel-ratio: 2),
-	 (min-resolution: 192dpi),
-	 (min-resolution: 2dppx) {
-	 background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/main-baner-2x.jpg);
-	 }
-}
-
-.baner-title {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.61;
-  letter-spacing: 0.06em;
-  color: var(--white-color);
-
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
-  max-width: 696px;
-
-   @media screen and (min-width: 768px) {
- margin-left: 189px;
-  margin-right: 189px;
+    @media screen and (min-divice-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/main-baner-2x.jpg);
+    }
   }
 
-  @media screen and (min-width: 1600px) {
-	  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  margin-left: auto;
-  margin-right: auto;
-  }
+  .baner-title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
 
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    max-width: 696px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 189px;
+      margin-right: 189px;
+    }
+
+    @media screen and (min-width: 1600px) {
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 }

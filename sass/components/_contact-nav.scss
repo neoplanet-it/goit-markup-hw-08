@@ -26,7 +26,6 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-
     // display: block;
   }
 
@@ -46,7 +45,7 @@
   }
 
   @media screen and (min-width: 1600px) {
-	color: var(--grey-color);
+    color: var(--grey-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
@@ -86,13 +85,37 @@
   }
 }
 
+.icon-header__envelope {
+  margin-right: 8px;
+  fill: currentColor;
+  width: 14px;
+  height: 10px;
+
+  @media screen and (min-width: 1600px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+.icon-header__smartphone {
+  margin-right: 8px;
+  fill: currentColor;
+  width: 10px;
+  height: 14px;
+
+  @media screen and (min-width: 1600px) {
+    width: 10px;
+    height: 16px;
+  }
+}
+
 .auth-nav .item + .item {
   @media screen and (min-width: 768px) {
     margin-top: 10px;
   }
 
   @media screen and (min-width: 1600px) {
-margin: 0;
+    margin: 0;
     margin-left: 50px;
   }
 }

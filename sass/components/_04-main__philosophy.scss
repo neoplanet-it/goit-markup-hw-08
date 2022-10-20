@@ -8,6 +8,10 @@
   margin-left: auto;
   margin-right: auto;
 
+    @media screen and (max-width: 1600px) {
+    display: none;
+	}
+
   &__list {
     display: flex;
     flex-wrap: wrap;
