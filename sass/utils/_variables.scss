@@ -1,51 +1,14 @@
+$mainFont: "Roboto";
+$secondaryFont: "Raleway";
+
 :root {
-  --primary-color: #212121;
-  --preprimary-color: #000000;
-  --grey-color: #757575;
-  --background-color: #2f303a;
-  --white-color: #ffffff;
-  --button-color: #f5f4fa;
-  --main-backgrond: #f5f5f5;
-  --link-color: #2196f3;
-  --prelink-color: #188ce8;
-  --contactfooter-color: rgba(255, 255, 255, 0.6);
-  --border-portfolio: #ececec;
-  --border-cleint: #afb1b8;
-  --border-footer: rgba(255, 255, 255, 0.1);
-  --work-details: rgba(33, 150, 243, 0.9);
-  --modal-background: rgba(0, 0, 0, 0.2);
-  --studio-details: rgba(47, 48, 58, 0.8);
-  --border-modal: rgba(33, 33, 33, 0.2);
-  --color-comment: rgba(117, 117, 117, 0.5);
-  --filter-footer: rgba(0, 0, 0, 0.15);
-  --color-email: rgba(255, 255, 255, 0.6);
-}
-
-.main-font {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--primary-color);
-
-  margin: 0;
-  text-align: center;
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 1200px) {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--primary-color);
-  }
-}
-
-.platform-site__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --black-logo-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --white-background-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
 }

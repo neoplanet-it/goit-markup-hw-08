@@ -1,29 +1,26 @@
-//**UTILS**//
-@import './utils/main__utils';
+@import './utils/variables';
+@import './base/reset';
+@import './base/container';
 
-//**MAIN__HEADER**//
-@import './components/01-main__header';
+@import './components/section-title';
+@import './components/logo';
 
-//**MAIN__BANER**//
-@import './components/02-main__baner';
+@import './utils/hidden';
 
-//**MAIN__BENEFIT**//
-@import './components/03-main__benefit';
 
-//**MAIN__PHILOSOPHY**//
-@import './components/04-main__philosophy';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/work';
+@import './layout/team';
+@import './layout/client';
+@import './layout/footer';
 
-//**MAIN__TEAM**//
-@import './components/05-main__team';
+@import './portfolio/portfolio';
+@import './components/modal';
 
-//**MAIN__CLIENT**//
-@import './components/06-main__client';
 
-//**MAIN__FOOTER**//
-@import './components/07-main__footer';
 
-//**MAIN__PORTFOLIO**//
-@import './components/08-main__portfolio';
 
-//**MAIN__MODAL**//
-@import './components/09-main__modal';
+
+
