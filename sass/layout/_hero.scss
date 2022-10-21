@@ -1,3 +1,5 @@
+//**MAIN-HERO**//
+
 .hero {
   text-align: center;
   margin-left: auto;
@@ -8,7 +10,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../img/hero-mobile.jpg");
+    url("../images/container__main-hero/hero-mobile-1x__480-400.jpg");
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -18,7 +20,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/hero-mobile2x.jpg);
+      url("../images/container__main-hero/hero-mobile-2x__960-800.jpg");
   }
 
   @media screen and (min-width: 768px) {
@@ -27,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero-tablet.jpg");
+      url("../images/container__main-hero/hero-tablet-1x__768-400.jpg");
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -37,7 +39,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero-tablet2x.jpg");
+        url("../images/container__main-hero/hero-tablet-2x__1536-800.jpg");
     }
   }
 
@@ -47,7 +49,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero-desctop.jpg");
+      url("../images/container__main-hero/hero-desktop-1x__1600-600.jpg");
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -56,7 +58,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url("../images/hero-desctop2x.jpg");
+        url("../images/container__main-hero/hero-desktop-2x__3200-4200.jpg");
     }
   }
 
@@ -73,6 +75,8 @@
     padding-top: 200px;
   }
 }
+
+//**HERO-TITLE**//
 
 .hero__title {
   padding: 0;
@@ -103,6 +107,8 @@
   }
 }
 
+//**BUTTON-HERO**//
+
 .hero__btn {
   display: inline-block;
   min-width: 140px;
@@ -128,8 +134,8 @@
 
   &:hover,
   &:focus {
-    background-color: var(--white-text-color);
-    color: var(--accent-color);
+    background-color: var(--preaccent-color);
+    color: var(--white-text-color);
   }
 
   @media screen and (min-width: 480px) {

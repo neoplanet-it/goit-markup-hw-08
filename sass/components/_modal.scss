@@ -1,3 +1,5 @@
+//**MAIN-HERO**//
+
 .backdrop {
   position: fixed;
 
@@ -27,7 +29,7 @@
 .modal {
   width: 320px;
   min-height: 581px;
-  background-color: #ffffff;
+  background-color: var(--white-text-color);
 
   position: relative;
   transform: scale(1);
@@ -70,6 +72,8 @@
     fill: var(--accent-color);
   }
 }
+
+//**MODAL-FORM**//
 
 .form {
   margin-left: auto;
@@ -164,6 +168,8 @@ textarea {
 }
 
 .comment {
+  font-size: 14px;
+
   &::placeholder {
     font-size: 12px;
     line-height: 1.17;
@@ -185,7 +191,7 @@ textarea {
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid #212121;
+  border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   margin-right: 7px;
 }
@@ -203,7 +209,7 @@ textarea {
   clip: rect(0 0 0 0);
 
   &:checked + .icon-chek {
-    background-image: url(../images/icon-check.svg);
+    background-image: url(../images/svg/icon-check.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-color: var(--accent-color);
@@ -270,6 +276,6 @@ textarea {
 
   &:focus,
   &:hover {
-    background-color: #188ce8;
+    background-color: var(--preaccent-color);
   }
 }

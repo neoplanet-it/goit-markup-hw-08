@@ -1,9 +1,11 @@
-.header {
-  border-bottom: 1px solid #ececec;
+//**MAIN-HEADER**//
 
-   @media screen and (max-width: 767px) {
+.header {
+  border-bottom: 1px solid var(--border-header-color);
+
+  @media screen and (max-width: 767px) {
     padding-top: 16px;
-  padding-bottom: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -18,6 +20,8 @@
     max-width: 767px;
   }
 }
+
+//**MAIN-NAVIGATION**//
 
 .header__nav {
   display: flex;
@@ -87,11 +91,15 @@
   }
 }
 
+//**MAIN-CONTACT**//
+
 .header-contact {
   display: flex;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-direction: column;
     align-content: center;
@@ -119,7 +127,6 @@
 .header-contact__link {
   display: inline-flex;
   padding: 32px 0px 32px;
-  /* color: var(--secondary-text-color); */
   align-items: center;
 
   font-weight: 500;
@@ -150,11 +157,13 @@
   fill: currentColor;
 }
 
+//**MOBILE-MENU**//
+
 .mob-menu {
   width: 100vw;
   height: 100vh;
   position: fixed;
-  background-color: #fff;
+  background-color: var(--white-text-color);
   top: 0;
   right: 0;
   padding: 15px 10px 48px 40px;
@@ -166,14 +175,12 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .menu-open {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
   background-color: transparent;
-  color: #212121;
+  color: var(--primary-text-color);
   border: none;
   margin-left: auto;
   cursor: pointer;
@@ -192,9 +199,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   background-color: transparent;
-  color: #212121;
+  color: var(--primary-text-color);
   border: none;
   margin-left: auto;
   cursor: pointer;
@@ -204,6 +211,8 @@
     fill: var(--accent-color);
   }
 }
+
+//**MOBILE-MENU__SELECTION**//
 
 .mob-menu-list__item {
   &:not(:last-child) {
@@ -218,7 +227,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--primary-text-color);
 
   &:focus,
   &:hover {
@@ -240,7 +249,7 @@
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .mob-menu-list__mail {
@@ -252,7 +261,7 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
 
   margin-bottom: 64px;
 }
@@ -272,7 +281,7 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
 
-  color: #2196f3;
+  color: var(--accent-color);
 
   &:not(:first-child)::before {
     content: "";
