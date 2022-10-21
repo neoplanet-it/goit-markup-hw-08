@@ -1,3 +1,7 @@
+main {
+  border-top: 1px solid var(--border-portfolio);
+}
+
 header {
   border-bottom: 1px solid var(--border-portfolio);
 }
@@ -33,7 +37,6 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   color: var(--main-backgrond);
-
 }
 
 input::placeholder {

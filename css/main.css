@@ -31,7 +31,7 @@
   text-align: center;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-font {
     font-weight: 700;
     font-size: 36px;
@@ -282,6 +282,10 @@ button {
   fill: currentColor;
 }
 
+main {
+  border-top: 1px solid var(--border-portfolio);
+}
+
 header {
   border-bottom: 1px solid var(--border-portfolio);
 }
@@ -384,7 +388,7 @@ textarea {
     padding: 0;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -407,7 +411,7 @@ textarea {
     display: flex;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -430,7 +434,7 @@ textarea {
     line-height: 1.16;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-weight: 700;
     font-size: 26px;
@@ -457,6 +461,11 @@ textarea {
     padding-bottom: 26px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-nav__link.current {
+    padding-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -469,13 +478,15 @@ textarea {
     margin-right: 96px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 93px;
     gap: 50px;
+    margin-right: 290px;
+    padding-top: 0;
   }
 }
 
@@ -502,6 +513,12 @@ textarea {
     padding-top: 0px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .site-nav__link:first-child {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
   .site-nav__link {
     font-weight: 500;
@@ -509,7 +526,7 @@ textarea {
     line-height: 1.14;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .site-nav__link {
     font-weight: 500;
     font-size: 14px;
@@ -537,7 +554,7 @@ textarea {
             transform: translateY(1px);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .site-nav__link.current::after {
     content: "";
     left: 0;
@@ -558,12 +575,13 @@ textarea {
   padding-left: 40px;
   display: flexorder;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .auth-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
+    margin: 0;
+    padding: 0;
   }
 }
 .auth-nav__contact--telephone {
@@ -575,6 +593,25 @@ textarea {
   color: var(--link-color);
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .auth-nav__contact--telephone {
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .auth-nav__contact--telephone {
+    color: var(--grey-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0;
+  }
+}
 .auth-nav__contact--email {
   color: var(--grey-color);
   text-decoration: none;
@@ -583,29 +620,23 @@ textarea {
   line-height: 1.16;
   letter-spacing: 0.02em;
 }
-.auth-nav__contact {
-  color: var(--grey-color);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-}
 @media screen and (min-width: 768px) {
-  .auth-nav {
+  .auth-nav__contact--email {
     padding-top: 0px;
     padding-left: 0px;
     margin-left: auto;
   }
 }
-@media screen and (min-width: 1600px) {
-  .auth-nav {
+@media screen and (min-width: 1200px) {
+  .auth-nav__contact--email {
     color: var(--grey-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.16;
+    line-height: 1.14;
     letter-spacing: 0.02em;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -618,7 +649,7 @@ textarea {
   background-position: center;
   color: var(--grey-color);
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .icon-header {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -640,7 +671,7 @@ textarea {
     display: none;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .icon-header__content {
     margin-right: 10px;
   }
@@ -652,10 +683,10 @@ textarea {
   width: 14px;
   height: 10px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .icon-header__envelope {
-    width: 16px;
-    height: 12px;
+    width: 20px;
+    height: 16px;
   }
 }
 
@@ -665,9 +696,9 @@ textarea {
   width: 10px;
   height: 14px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .icon-header__smartphone {
-    width: 10px;
+    width: 20px;
     height: 16px;
   }
 }
@@ -677,7 +708,7 @@ textarea {
     margin-top: 10px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .auth-nav .item + .item {
     margin: 0;
     margin-left: 50px;
@@ -734,6 +765,7 @@ textarea {
 }
 
 .main-baner {
+  display: block;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -988,7 +1020,7 @@ textarea {
     padding-bottom: 0px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-team__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1029,7 +1061,7 @@ textarea {
     width: 354px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-team__list img {
     width: 270px;
   }
@@ -1131,7 +1163,7 @@ textarea {
 .footer-support {
   text-align: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .footer-support {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1151,7 +1183,7 @@ textarea {
     margin-right: 165px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .contact-footer {
     text-align: left;
     margin-left: 0px;
@@ -1162,7 +1194,7 @@ textarea {
 .platform-site {
   text-align: center;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .platform-site {
     text-align: left;
     margin-left: 70px;
@@ -1178,7 +1210,7 @@ textarea {
     padding-top: 0px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .support-site {
     margin-left: 93px;
     text-align: left;
@@ -1266,7 +1298,7 @@ textarea {
 .support-elements {
   padding-top: 20px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .support-elements {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1291,7 +1323,7 @@ textarea {
     width: 450px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .support-elements__email input {
     width: 358px;
     margin-right: 0;
@@ -1324,7 +1356,7 @@ textarea {
             justify-content: center;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .main-filter {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1366,7 +1398,7 @@ textarea {
     padding-bottom: 60px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .project-list {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1479,7 +1511,7 @@ textarea {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
@@ -1574,6 +1606,10 @@ textarea {
 
 .modal-selection {
   position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 .modal-selection__input {
   padding-left: 42px;
@@ -1585,10 +1621,11 @@ textarea {
 
 .comment {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--color-comment);
+  color: var(--preprimary-color);
 }
 
 .icon-modal {

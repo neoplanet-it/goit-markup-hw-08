@@ -38,9 +38,9 @@
 
   color: var(--grey-color);
 
-&:first-child {
-  margin-top: 0px;
-}
+  &:first-child {
+    margin-top: 0px;
+  }
 }
 
 .modal__element .modal-selection input {
@@ -71,37 +71,41 @@
   margin-left: 7px;
 
   font-weight: 400;
-//   font-size: 14px;
-//   line-height: 1.71;
- font-size: 12px;
+  //   font-size: 14px;
+  //   line-height: 1.71;
+  font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 
   color: var(--grey-color);
 
-&__detail {
-  position: relative;
-  color: var(--link-color);
-  text-decoration: none;
-}
+  &__detail {
+    position: relative;
+    color: var(--link-color);
+    text-decoration: none;
+  }
 
-&__detail::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  width: 100%;
-  height: 1px;
-  background-color: var(--link-color);
-}
+  &__detail::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--link-color);
+  }
 }
 
 .modal-selection {
   position: relative;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 
-&__input {
-  padding-left: 42px;
-}
+  &__input {
+    padding-left: 42px;
+  }
 }
 
 .modal-selection:focus-within > .icon-modal {
@@ -110,11 +114,12 @@
 
 .comment {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.16;
   letter-spacing: 0.01em;
 
   color: var(--color-comment);
+  color: var(--preprimary-color);
 }
 
 //**ICON__MODAL**//
@@ -137,9 +142,9 @@
   justify-content: center;
   margin-top: 20px;
 
-&__checkbox {
-  appearance: none;
-}
+  &__checkbox {
+    appearance: none;
+  }
 }
 
 .check-label__accept {
