@@ -281,11 +281,21 @@ img {
   padding: 15px 10px 48px 40px;
   z-index: 999;
 }
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
 .flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .flex {
+    display: none;
+  }
 }
 
 .menu-open {
@@ -318,6 +328,11 @@ img {
 }
 .menu-close:hover, .menu-close:focus {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-close {
+    display: none;
+  }
 }
 
 .mob-menu-list__item:not(:last-child) {

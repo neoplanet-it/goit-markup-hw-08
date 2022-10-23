@@ -197,12 +197,20 @@
   right: 0;
   padding: 15px 10px 48px 40px;
   z-index: 999;
+
+  @media screen and (min-width: 768px) {
+display: none;
+  }
 }
 
 .flex {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+   @media screen and (min-width: 768px) {
+display: none;
+  }
 }
 
 .menu-open {
@@ -238,6 +246,10 @@
   &:hover,
   &:focus {
     fill: var(--accent-color);
+  }
+
+   @media screen and (min-width: 768px) {
+display: none;
   }
 }
 
