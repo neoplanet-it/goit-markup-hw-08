@@ -194,6 +194,11 @@ textarea {
   border: 2px solid var(--primary-text-color);
   border-radius: 2px;
   margin-right: 7px;
+  cursor: pointer;
+
+    &:focus {
+  border: 2px solid var(--accent-color);
+  }
 }
 
 .form-checkbox {
@@ -203,6 +208,7 @@ textarea {
   height: 1px;
   margin: -1px;
   padding: 0;
+  cursor: pointer;
 
   overflow: hidden;
   border: 0;
@@ -216,6 +222,10 @@ textarea {
     background-origin: border-box;
     border-color: var(--accent-color);
   }
+
+      &:focus + .icon-chek {
+  border: 2px solid var(--accent-color);
+  }
 }
 
 .policy-label {
@@ -225,6 +235,10 @@ textarea {
   font-size: 11px;
   line-height: 1.14;
   color: var(--secondary-text-color);
+
+    &:focus {
+	fill: var(--accent-color);
+  }
 
   @media screen and (max-width: 479px) {
     font-size: 10px;
